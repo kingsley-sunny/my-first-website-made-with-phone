@@ -1,0 +1,556 @@
+.overlay {
+   height: 100%;
+   width: 0;
+   position: fixed;
+   z-index: 1;
+   top: 0;
+   left: 0;
+   background-color: rgb(0,0,0);
+   background-color: rgba(0,0,0,0.9);
+   overflow-x: hidden;
+   transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/* When the height of the screen is less than
+450 pixels, this will change the font-size of
+the links and position the close button again,
+so they don't overlap */ 
+
+@media screen and (max-height:450px){
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+#span1 {
+  color: white;
+  background-attachment: fixed;
+  float: left !important;
+  margin-left: 1em;
+}
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+p, h2 {
+
+}
+#div1 {
+  width: 100%;
+  height: 40em;
+  background-image: url(/image.png);
+  background-size: cover;
+  background-position: center;
+}
+#div1 #h11 {
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+  color: snow;
+  padding: 3em 0 0 0;
+}
+#div1 .p1 {
+  font-size: 2em;
+  color: snow;
+  font-style: italic;
+  text-align: center;
+}
+#div1 .div2 {
+  float: left;
+  width: 20%;
+  height: 3em;
+  border: 0.2em solid white;
+  color: white;
+  border-radius: 1em;
+  margin: 20% 14%;
+}
+#div1 .div2:hover {
+  color: black;
+  background-color: white;
+  
+}
+#div1 #findout {
+  font-size: .7em;
+  text-align: center;
+  margin: 1.3em 0;
+  font-weight: bold;
+}
+#div1 .div3 {
+  float: left;
+  width: 20%;
+  height: 3em;
+  border: 0.2em solid white;
+  color: white;
+  border-radius: 1em;
+  margin: 20% 14%;
+}
+#div1 .div3:hover {
+  color: black;
+  background-color: white;
+  
+}
+
+#div1 #findin {
+  font-weight: bold;
+  font-size: .7em;
+  text-align: center;
+  margin: 1.3em 0;
+}
+
+.services {
+  background-color: white;
+  text-align: center;
+  width: 94%;
+  height: 37em;
+  padding: 3%;
+}
+
+.services #h21 {
+  color: brown;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 2em;
+  margin: .5em 0;
+}
+.services #p1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.5em;
+}
+.services #img1 {
+  background-image: url(image.png);
+  height: 10em;
+  width: 45%;
+  opacity: 1;
+  background-size: cover;
+  background-position: center;
+  float: left;
+  margin: 1vh 1vh;
+  transition: .5s ease-in;
+  transition-property: opacity;
+  border-radius: 1em;
+}
+.services #p2 {
+  color: transparent;
+  opacity: 0;
+  text-align: center;
+  transition-property: color opacity transform margin;
+  transition-duration: .5s;
+  transition-timing-function: ease-in;
+}
+
+.services #p2:hover {
+  color: Black;
+  opacity: 1;
+  text-align: center;
+  transform: translateY(30%);
+  margin: 2em 0;
+  font-size: 1em;
+}
+.services #img1:hover {
+  opacity: .5;
+} 
+
+.services #img2 {
+  background-image: url(image.png);
+  height: 10em;
+  width: 45%;
+  opacity: 1;
+  background-size: cover;
+  background-position: center;
+  float: left;
+  margin: 1vh 1vh;
+  transition: .5s ease-in;
+  transition-property: opacity;
+  border-radius: 1em;
+}
+.services #img2:hover {
+  opacity: .5;
+}
+.services #p3 {
+  color: transparent;
+  opacity: 0;
+  text-align: center;
+  /*margin: 10vh 3vh;*/
+  transition-property: color opacity transform margin;
+  transition-duration: .5s;
+  transition-timing-function: ease-in;
+}
+
+.services #p3:hover {
+  color: black;
+  opacity: 1;
+  text-align: center;
+  transform: translateY(30%);
+  margin: 2em 0;
+  font-size: 1em;
+}
+
+
+
+.services #img1 {
+  background-image: url(barb.jpeg);
+  height: 8em;
+  width: 45%;
+  opacity: 1;
+  background-size: cover;
+  background-position: center;
+  float: left;
+  margin: 1vh 1vh;
+  transition: .5s ease-in;
+  transition-property: opacity;
+}
+.services #p2 {
+  color: transparent;
+  opacity: 0;
+  text-align: center;
+  transition-property: color opacity transform margin;
+  transition-duration: .5s;
+  transition-timing-function: ease-in;
+}
+
+.services #p2:hover {
+  color: black;
+  opacity: 1;
+  text-align: center;
+  transform: translateY(30%);
+  margin: 2em 0;
+  font-size: 1em;
+}
+.services #img1:hover {
+  opacity: .2;
+} 
+
+.services #img2 {
+  background-image: url(plait.jpeg);
+  height: 8em;
+  width: 45%;
+  opacity: 1;
+  background-size: cover;
+  background-position: center;
+  float: left;
+  margin: 1vh 1vh;
+  transition: .5s ease-in;
+  transition-property: opacity;
+}
+.services #img2:hover {
+  opacity: .2;
+}
+.services #p3 {
+  color: transparent;
+  opacity: 0;
+  text-align: center;
+  /*margin: 10vh 3vh;*/
+  transition-property: color opacity transform margin;
+  transition-duration: .5s;
+  transition-timing-function: ease-in;
+}
+
+.services #p3:hover {
+  color: black;
+  opacity: 1;
+  font-weight: bold;
+  text-align: center;
+  transform: translateY(20%);
+  margin: 2em 0;
+  font-size: 1em;
+}
+
+
+
+.services #treat {
+  background-image: url(treat.jpeg);
+  height: 8em;
+  width: 45%;
+  opacity: 1;
+  background-size: cover;
+  background-position: center;
+  float: left;
+  margin: 1vh 1vh;
+  transition: .5s ease-in;
+  transition-property: opacity;
+}
+.services #p2 {
+  color: transparent;
+  opacity: 0;
+  text-align: center;
+  transition-property: color opacity transform margin;
+  transition-duration: .5s;
+  transition-timing-function: ease-in;
+}
+
+.services #p2:hover {
+  color: black;
+  font-weight: bold;
+  opacity: 1;
+  text-align: center;
+  transform: translateY(20%);
+  margin: 2em 0;
+  font-size: 1em;
+}
+.services #treat:hover {
+  opacity: .2;
+} 
+
+.services #wash {
+  background-image: url(wash.jpeg);
+  height: 8em;
+  width: 45%;
+  opacity: 1;
+  background-size: cover;
+  background-position: center;
+  float: left;
+  margin: 1vh 1vh;
+  transition: .5s ease-in;
+  transition-property: opacity;
+}
+.services #wash:hover {
+  opacity: .2;
+}
+.services #p3 {
+  color: transparent;
+  opacity: 0;
+  font-weight: bold;
+  text-align: center;
+  /*margin: 10vh 3vh;*/
+  transition-property: color opacity transform margin;
+  transition-duration: .5s;
+  transition-timing-function: ease-in;
+}
+
+.services #p3:hover {
+  color: black;
+  font-weight: bold;
+  opacity: 1;
+  text-align: center;
+  transform: translateY(30%);
+  margin: 2em 0;
+  font-size: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+.choose {
+  background-color: snow;
+  text-align: center;
+  height: 100%;
+  width: 90%;
+  padding: 5%;
+}
+
+.choose #h2 {
+  color: brown;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 2em;
+  margin: .5em 0;
+}
+.choose #p1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
+
+
+
+#divIcon1 {
+  height: 6em;
+  padding: 3%;
+  box-shadow: .2em .2em 1em black;
+  margin-bottom: 1em;
+  border-radius: .7em;
+}
+
+#icon #img1 {
+  width: 3em;
+  float: left;
+  color: skyblue;
+  margin-right: .5em;
+}
+/*
+#divIcon2 {
+  height: 17vh;
+  padding: 2vh;
+  -webkit-box-shadow: 1vh 1vh 3vh black;
+  margin-bottom: 3vh;
+  border-radius: 2vh;
+
+}
+
+#icon #img2 {
+  width: 15vh;
+  float: left;
+  color: skyblue;
+  margin-right: 1vh;
+}
+#divIcon1 {
+  height: 17vh;
+  padding: 2vh;
+  -webkit-box-shadow: 1vh 1vh 3vh black;
+  margin-bottom: 3vh;
+  border-radius: 2vh;
+
+}
+
+#icon #img1 {
+  width: 15vh;
+  float: left;
+  color: skyblue;
+  margin-right: 1vh;
+}
+#divIcon1 {
+  height: 17vh;
+  padding: 2vh;
+  -webkit-box-shadow: 1vh 1vh 3vh black;
+  margin-bottom: 3vh;
+  border-radius: 2vh;
+
+}
+
+#icon #img1 {
+  width: 15vh;
+  float: left;
+  color: skyblue;
+  margin-right: 1vh;
+
+} */
+.test #h2 {
+  color: skyblue;
+  font-weight: bold;
+  text-shadow: 0.2em 0.2em 1em black ;
+  font-size: 2em;
+  margin: .5em 0;
+}
+.test #p1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
+
+/*#testionial #h2 {
+  color: skyblue;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 0.2em 0.2em 1em black ;
+  font-size: 2em;
+  margin: .5em 0;
+}
+#testimonials #p1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
+
+#divTest1 {
+  height: 6em;
+  padding: 3%;
+  -webkit-box-shadow: .2em .2em 1em black;
+  margin-bottom: 1em;
+  border-radius: .7em;
+}
+
+#test #img1 {
+  width: 3em;
+  float: left;
+  color: skyblue;
+  margin-right: .5em;
+}
+*/
+.shop {
+  width: 94%;
+  padding: 3%;
+  color: black;
+  background-color: gainsboro;
+  opacity: .5;
+}
+.shop p {
+  font-size: .5em;
+  font-style: italic;
+}
+.shop #h2 {
+  color: brown;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 2em;
+  margin: .5em 0;
+}
+.shop #p1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1em;
+}
+.shop #sp {
+  float: left;
+  
+}
+.shop #sa {
+  float: right;
+}
+#lo {
+  text-align: center;
+}
+#span {
+  padding: 2em 35%;
+}
+.logo {
+  width: 2em;
+  height: 2em;
+}
+#copy {
+  font-size: .4em;
+  text-align: center;
+}
+
+
+
+
